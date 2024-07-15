@@ -1,4 +1,6 @@
 # challenge-01-homepage
+- [github](https://github.com/MeyerZhao/challenge-01-homepage)
+- [frontendmentor](https://www.frontendmentor.io/challenges)
 
 challenge-01-homepage
 
@@ -50,4 +52,18 @@ git fetch --prune
 ```bash
 git push origin --delete <branch_name>
 git fetch origin
+```
+
+
+### 设置上游分支
+```bash
+git push origin master -u
+
+git branch -u origin/master
+```
+> `git branch --help -w` 获取帮助文档
+
+### 从远端仓库检出分支
+```bash
+git checkout -b new_branch_name origin/remote_branch_name
 ```
