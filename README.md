@@ -1,4 +1,5 @@
 # challenge-01-homepage
+
 - [github](https://github.com/MeyerZhao/challenge-01-homepage)
 - [frontendmentor](https://www.frontendmentor.io/challenges)
 
@@ -54,16 +55,84 @@ git push origin --delete <branch_name>
 git fetch origin
 ```
 
-
 ### 设置上游分支
+
 ```bash
 git push origin master -u
 
 git branch -u origin/master
 ```
+
 > `git branch --help -w` 获取帮助文档
 
 ### 从远端仓库检出分支
+
 ```bash
 git checkout -b new_branch_name origin/remote_branch_name
+```
+
+## 如何清理未使用的 css
+
+我找到的最佳方案是使用[tailwindcss](https://tailwindcss.com/)
+首先安装
+
+```bash
+npm install -D tailwindcss postcss postcss-import autoprefixer
+
+npx tailwindcss init
+
+npx tailwindcss init -p
+```
+
+### Configure your template paths
+
+**tailwind.config.js**
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+## bootstrap => tailwindcss
+
+position-absolute => absolute
+
+## css 原生 breakpoint 写法
+
+```css
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 ```

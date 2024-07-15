@@ -1,0 +1,19 @@
+.pattern-square {
+  position: relative;
+}
+
+.pattern-square:after {
+  background-image: url(../images/pattern/pattern-square.svg);
+  background-position: top;
+  bottom: 0;
+  content: "";
+  height: 312px;
+  left: 0;
+  -webkit-mask-image: linear-gradient(0deg, transparent 35%, #000 75%);
+  mask-image: linear-gradient(0deg, transparent 35%, #000 75%);
+  padding: 40px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
