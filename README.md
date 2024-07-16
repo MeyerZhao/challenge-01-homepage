@@ -136,3 +136,73 @@ position-absolute => absolute
   }
 }
 ```
+
+## css breakpoint 在 tailwindcss 的写法
+
+```css
+@layer components {
+  .container {
+    --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    width: 100%;
+
+    @media screen(sm) {
+      max-width: 540px;
+    }
+
+    @media screen(md) {
+      max-width: 720px;
+    }
+
+    @media screen(lg) {
+      max-width: 960px;
+    }
+
+    @media screen(xl) {
+      max-width: 1140px;
+    }
+
+    @media screen(2xl) {
+      max-width: 1320px;
+    }
+  }
+}
+```
+> 这里写 的  .container 会与 tailwind.config.js 重复部分css 代码， 所以需要禁用  tailwind.config.js 的 container class
+
+## 在特定断点处配置 .container 最大宽度 - Tailwindcss
+Configure .container max-width at specific breakpoints - Tailwindcss
+https://stackoverflow.com/questions/65903737/configure-container-max-width-at-specific-breakpoints-tailwindcss
+```js
+module.exports = {
+  corePlugins: {
+    container: false
+  },
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '640px',
+          },
+          '@screen md': {
+            maxWidth: '768px',
+          },
+          '@screen lg': {
+            maxWidth: '1280px',
+          },
+          '@screen xl': {
+            maxWidth: '1400px',
+          },
+        }
+      })
+    }
+  ]
+}
+```
+
