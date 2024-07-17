@@ -55,6 +55,7 @@ git remote rename origin upstream # 设置仓库名字为 upstream
 
 git fetch --prune
 ```
+> 清理之后 可以使用 `git branch -a` 查看清理之后的 branch 列表
 
 如果你只想删除特定的分支，你可以先删除远程分支，然后同步这个更改到你的本地仓库：
 
