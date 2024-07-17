@@ -188,6 +188,61 @@
     color-scheme: dark;
   }
 
+  [data-bs-theme=light] {
+    --btn-google-bg:  #f1f5f9;
+    --btn-google-border-color:  #e2e8f0;
+    --btn-google-color:  #64748b;
+    --btn-google-hover-border-color: #ea4335;
+    --btn-google-hover-bg: #ea4335;
+    --btn-google-hover-color:  #fff;
+
+    --btn-facebook-bg:  #f1f5f9;
+    --btn-facebook-border-color:  #e2e8f0;
+    --btn-facebook-color:  #64748b;
+    --btn-facebook-hover-border-color:#1877f2;
+    --btn-facebook-hover-bg:#1877f2;
+    --btn-facebook-hover-color: #fff;
+  }
+
+  [data-bs-theme=dark] {
+    --btn-google-bg:  #1e293b;
+    --btn-google-border-color:  #334155;
+    --btn-google-color:  #64748b;
+    --btn-google-hover-border-color: #ea4335;
+    --btn-google-hover-bg: #ea4335;
+    --btn-google-hover-color:  #fff;
+
+    --btn-facebook-bg: #1e293b;
+    --btn-facebook-border-color: #334155;
+    --btn-facebook-color: #64748b;
+    --btn-facebook-hover-border-color:#1877f2;
+    --btn-facebook-hover-bg:#1877f2;
+    --btn-facebook-hover-color: #fff;
+  }
+
+  [data-bs-theme=dark] {
+    --bs-gray-100: #1e293b;
+    --bs-gray-200: #334155;
+    --bs-gray-800: #cbd5e1;
+    --bs-light: #1e293b;
+    --bs-dark: #fff;
+    --bs-white: #1e293b;
+    --bs-nav-pills-link-active-color: #475569;
+    --bs-nav-pills-link-active-bg: #1e293b
+  }
+
+  [data-bs-theme='red'] {
+    --background: #fef5e1;
+    --bs-body-bg: #fef5e1;
+    --foreground: #6c0c05;
+  }
+
+
+
+
+
+
+
   *,
   :after,
   :before {
@@ -239,11 +294,16 @@
   h5,
   h6 {
     color: var(--bs-heading-color);
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.4;
     margin-bottom: 0.5rem;
     margin-top: 0;
   }
+
+  /* h1 {
+    color: hsl(from var(--bs-heading-color) h s l / var(--bs-heading-color-opacity, .1));
+  } */
+
 
   .h1,
   h1 {
@@ -614,5 +674,10 @@
 
   progress {
     vertical-align: baseline;
+  }
+
+  .text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important
   }
 }
