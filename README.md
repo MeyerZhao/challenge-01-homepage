@@ -1,7 +1,15 @@
 # challenge-01-homepage
-
 - [github](https://github.com/MeyerZhao/challenge-01-homepage)
+- [Demo](https://meyerzhao.github.io/challenge-01-homepage/) 开发中
+
+目标网站 https://block.codescandy.com/signin.html?
+
+
 - [frontendmentor](https://www.frontendmentor.io/challenges)
+
+
+- [Using relative colors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors)
+- [Relative colors make so many things easier!](https://www.youtube.com/watch?v=gPacarD9NuA&t=192s)
 
 challenge-01-homepage
 
@@ -206,3 +214,24 @@ module.exports = {
 }
 ```
 
+## 创建页面多 theme
+:root 的颜色变量就不适合使用具体dark white 之类的
+应该使用 前景色 背景色 这些描述 变量使用位置的名词
+- https://themeforest.net/search/appointment%20booking
+- palettify: https://palettify.co/playground/clr9tqkde0003z8w0jes7xabc
+- https://themewagon.com/theme-tag/hotel-template/
+- https://www.themes.dev/library/
+- https://github.com/jln13x/ui.jln.dev
+- https://www.wrappixel.com/templates/category/react-templates/
+- https://codepen.io/Juxtopposed/pen/VwGovbY
+
+## 如何从网站中删除未使用的 CSS？
+https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/
+
+## 使用 PurgeCSS 从 Bootstrap 中删除未使用的 CSS 样式
+2019 年 2 月 1 日
+https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772
+
+
+## What is the main use of the site.webmanifest file?
+https://stackoverflow.com/questions/60669830/what-is-the-main-use-of-the-site-webmanifest-file

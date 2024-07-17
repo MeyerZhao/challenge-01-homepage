@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <!-- Required meta tags -->
@@ -141,7 +141,7 @@
       </div>
     </section>
     <!--Sign up end-->
-    <div class="absolute end-0 bottom-0 m-4" hidden>
+    <div class="absolute end-0 bottom-0 m-4">
       <div class="dropdown">
         <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button"
           aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
@@ -149,6 +149,13 @@
           <span class="visually-hidden bs-theme-text">Toggle theme</span>
         </button>
         <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="red"
+              aria-pressed="false">
+              <i class="bi theme-icon bi-sun-fill text-red-500"></i>
+              <span class="ms-2">Red</span>
+            </button>
+          </li>
           <li>
             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
               aria-pressed="false">
